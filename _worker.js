@@ -91,7 +91,7 @@ function 是否开启值(值, 默认启用 = false) {
 function 归一配置开关(值, 默认启用 = false) {
   return 是否开启值(值, 默认启用) ? 'yes' : 'no';
 }
- 
+
 function 获取配置开关值(键, 默认启用 = false, 备用值 = undefined) {
   const 默认值 = 备用值 !== undefined ? 备用值 : (默认启用 ? 'yes' : 'no');
   return 是否开启值(获取配置值(键, 默认值), 默认启用);
